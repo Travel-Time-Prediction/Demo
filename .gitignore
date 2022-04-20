@@ -1,4 +1,5 @@
 model/weights
+config.py
 __pycache__/
 *.py[cod]
 *$py.class
