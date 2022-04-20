@@ -63,10 +63,11 @@ def actual_predict_val(result, date, time):
 
     target = int(out[out['type'] == 'target']['delta_t'].values[0] // 60)
     pred = int(out[out['type'] == 'predict']['delta_t'].values[0] // 60)
-    # delta = abs(target - pred)s
+    # delta = target - pred
     st.metric('Actual', f"{target} Min")
     st.metric('Predict', f"{pred} Min")
     # st.metric("Delta time between Target and Predict", f"{delta} Min")
+
 
 def graph_result(result, road):
     target = result[result['type'] == 'target']['delta_t']

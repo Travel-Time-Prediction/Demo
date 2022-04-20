@@ -11,17 +11,25 @@ st.set_page_config(layout='wide')
 
 if not "initialized" in st.session_state:
     st.session_state.road = 'Highway No. 1'
-    st.session_state.date = datetime.date(2020, 1, 2)
+    # st.session_state.date = datetime.date(2020, 1, 2)
     st.session_state.time = '00:00'
     st.session_state.result = None
     st.session_state.old_road = 0
     st.session_state.initialized = True
 
 st.title(f"🚚 Travel Time Prediction")
-st.write(f"*Rathachai Chawuthai, Nachaphat Ainthong, Surasee Intarawart and Niracha Boonyanaet*")
+with st.expander(f"ℹ️ - About this research"):
+    st.write(
+        """
+        - Member in group is ***Rathachai Chawuthai, Nachaphat Ainthong, Surasee Intarawart and Niracha Boonyanaet.***
+        """
+    )
+    st.write("")
+    # st.markdown(f"- Member in group is ***Rathachai Chawuthai, Nachaphat Ainthong, Surasee Intarawart and Niracha Boonyanaet.***")
 
 column1, column2 = st.columns((1, 1))
 with column2:
+    st.subheader('📝 Insert information for predict travel time')
     with st.form('filter'):
         st.selectbox(
             '🚩 Select the Highway Nunber.',
