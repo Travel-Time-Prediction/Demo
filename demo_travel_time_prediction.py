@@ -21,11 +21,16 @@ st.title(f"🚚 Travel Time Prediction")
 with st.expander(f"ℹ️ - About this research"):
     st.write(
         """
-        - Member in group is ***Rathachai Chawuthai, Nachaphat Ainthong, Surasee Intarawart and Niracha Boonyanaet.***
+        - Researched by ***Rathachai Chawuthai, Nachaphat Ainthong, Surasee Intarawart and Niracha Boonyanaet.***
         """
     )
     st.write("")
-    # st.markdown(f"- Member in group is ***Rathachai Chawuthai, Nachaphat Ainthong, Surasee Intarawart and Niracha Boonyanaet.***")
+
+# st.write(
+#     """
+#     Researched by ***Rathachai Chawuthai, Nachaphat Ainthong, Surasee Intarawart and Niracha Boonyanaet.***
+#     """
+# )
 
 column1, column2 = st.columns((1, 1))
 with column2:
