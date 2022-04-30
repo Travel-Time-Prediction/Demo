@@ -26,8 +26,8 @@ def split_data_over(data_path):
     for idx, time in enumerate(time_list):
         df_tmp = df[df.index.hour.isin(time)]
         
-        num_data_points_list.append(len(df_tmp['2020-01-01' :'2020-04-30']))
-        df_list.append(df_tmp['2020-01-01' :'2020-04-30'])
+        num_data_points_list.append(len(df_tmp['2019-09-01' :'2019-12-31']))
+        df_list.append(df_tmp['2019-09-01' :'2019-12-31'])
             
     return df_list, num_data_points_list
 

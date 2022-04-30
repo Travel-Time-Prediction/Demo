@@ -7,7 +7,7 @@ from tools.display import show_map, actual_predict_val, graph_result
 
 import datetime
 
-st.set_page_config(layout='wide')
+st.set_page_config(page_title='Demo Travel Time',layout='wide')
 
 if not "initialized" in st.session_state:
     st.session_state.road = 'Highway No. 1'
@@ -44,9 +44,9 @@ with column2:
 
         st.date_input(
             "🌛 Select date.",
-            min_value=datetime.date(2020, 1, 2),
-            max_value=datetime.date(2020, 4, 30),
-            value=datetime.date(2020, 1, 2),
+            min_value=datetime.date(2019, 9, 2),
+            max_value=datetime.date(2019, 12, 31),
+            value=datetime.date(2019, 9, 2),
             key='date'
         )
 
